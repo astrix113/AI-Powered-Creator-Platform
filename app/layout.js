@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
-// import Header from "@/components/header";
+import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { shadesOfPurple } from "@clerk/themes";
 import { ConvexClientProvider } from "@/components/convex-client-provider";
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
             }}
           >
             <ConvexClientProvider>
-              {/* <Header /> */}
+              <Header />
               <main className="bg-slate-900 min-h-screen text-white overflow-x-hidden">
                 <Toaster richColors />
 
