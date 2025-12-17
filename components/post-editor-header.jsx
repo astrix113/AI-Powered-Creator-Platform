@@ -64,9 +64,9 @@ export default function PostEditorHeader({
             variant="ghost"
             size="sm"
             onClick={onSettingsOpen}
-            className="text-slate-400 hover:text-white"
+            className="text-slate-400 hover:text-white cursor-pointer"
           >
-            <Settings className="h-4 w-4" />
+            <Settings className="h-4 w-4 " />
           </Button>
 
           {!isEdit && (
@@ -75,7 +75,7 @@ export default function PostEditorHeader({
               disabled={isPublishing}
               variant="ghost"
               size="sm"
-              className="text-slate-400 hover:text-white"
+              className="text-slate-400 hover:text-white cursor-pointer"
             >
               {isPublishing ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
@@ -97,7 +97,7 @@ export default function PostEditorHeader({
               {isPublishing ? (
                 <Loader2 className="h-4 w-4 mr-2 animate-spin" />
               ) : (
-                <Send className="h-4 w-4 mr-2" />
+                <Send className="h-4 w-4 mr-2 " />
               )}
               Update
             </Button>
